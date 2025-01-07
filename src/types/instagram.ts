@@ -18,3 +18,18 @@ export interface InstagramResponse {
     next: string;
   };
 }
+
+export interface InstagramInsights {
+  impressions: number;
+  reach: number;
+  engagement: number;
+  likes: number;
+  comments: number;
+  saves: number;
+  date: string;
+}
+
+export interface InsightsResponse {
+  data: InstagramInsights[];
+  period: string;
+}
